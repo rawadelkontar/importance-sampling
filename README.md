@@ -1,1 +1,4 @@
-# importance-sampling
+# Importance Sampling
+Importance sampling is a technique for estimating the output of a particular distribution, using samples genearated from a different distribution than the distribution of interest denoted as the target distribution. The idea behind this techniques,in the context of urban scale simulation, is that certain values of the input variables in a buildings simulation sample can have more or less impact on the output(ie. total site energy) based on the credibility of this sample in representing the targeted sample which is refered as the population, or real-world results.
+
+In order to adjust the impact of these variables to reflect reality or a desired scenarios, the output is weighted to correct for the use of biased or unwanted distribution.  Weighting the output involves re-balancing the data in order to more accurately reflect the popuation(target); this is by including a multiplier which projects results to more accurately represent the targeted distributions.
